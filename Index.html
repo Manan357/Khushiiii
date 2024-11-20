@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khushi's Birthday</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="password-screen">
+    <h1>Welcome to Khushi's Birthday!</h1>
+    <p>Enter the password to unlock the surprise:</p>
+    <input type="password" id="password" placeholder="Enter Password">
+    <button onclick="checkPassword()">Submit</button>
+    <p id="error-message"></p>
+  </div>
+
+  <div id="main-content" style="display: none;">
+    <div id="countdown">
+      <h1>Countdown to Khushi's Birthday!</h1>
+      <p id="countdown-timer"></p>
+    </div>
+
+    <div id="celebration" style="display: none;">
+      <h1>Happy Birthday, Khushi! 🎉</h1>
+      <div id="cake">
+        <div class="cake-body"></div>
+        <div class="candle" onclick="blowCandle()">
+          <div class="flame"></div>
+        </div>
+      </div>
+      <p id="message">Click the candle to blow it out!</p>
+    </div>
+
+    <div id="activities" style="display: none;">
+      <h2>Special Message</h2>
+      <p id="paragraph">Write your personal birthday message here!</p>
+
+      <h2>Fun Activities</h2>
+      <div id="quiz">
+        <h3>Quiz: How Well Do You Know Me?</h3>
+        <p>Question 1: What is my favorite color?</p>
+        <p>Question 2: What is my favorite food?</p>
+      </div>
+
+      <div id="favorites">
+        <h3>What I Like</h3>
+        <ul>
+          <li>Favorite Movie: Add here</li>
+          <li>Favorite Song: Add here</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
